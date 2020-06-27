@@ -2,7 +2,7 @@ body {
     line-height: 1.7;
     color: #cfcfd1;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 2rem;
     background: #232531;
     font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
 }
@@ -10,7 +10,7 @@ body {
 a{
     color: #ff5733;
     text-decoration: none;
-    transition: .3s all ease; 
+    transition: .5s all ease; 
 }
 
 a:hover {
@@ -18,13 +18,26 @@ a:hover {
     text-decoration: underline; 
 }
 
-.top-menu li {
-    display: inline-block;
-    padding: 2% 10% 2% 0%;
-}
-
 h1, h2, h3, h4, h5{
   font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+}
+
+.main-title{
+    color: #cfcfd1;
+    text-align: left;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 6rem;
+}
+
+.bottom-title{
+    color: #cfcfd1;
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 6rem;
 }
 
 .title{
@@ -34,6 +47,12 @@ h1, h2, h3, h4, h5{
     margin-left: 5%;
 }
 
+.title-w-margin{
+    color: #cfcfd1;
+    text-align: left;
+    margin-top: 20rem;
+}
+
 .subtitle{
     color:#ff5733;
     text-align: left;
@@ -41,13 +60,48 @@ h1, h2, h3, h4, h5{
     margin-left: 5%;
 }
 
-.main-link{
-    font-weight: bold;
+.title-container{
+    margin-top: 30rem;
 }
 
 .text-container{
-    font-size: 1.1rem;
     text-align: left;
     margin-right: 5%;
     margin-left: 5%;
+}
+
+.centered-text{
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.emp-text{
+    color:#ffb133;
+}
+
+.top-menu{
+    padding: 2% 0% 0% 70%;
+}
+
+.top-menu li {
+    display: inline-block;
+    padding: 0% 10% 0% 0%;
+}
+
+.list{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 200px;
+}
+
+.image{
+    padding-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

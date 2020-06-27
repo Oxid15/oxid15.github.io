@@ -6,27 +6,151 @@
         <link rel="icon" href="images/icon.png">
     </head>
     <body> 
-        <header class="header">
-            <nav>
-                <ul class="top-menu">
-                    <li><a class="main-link" href="https://oxid15.github.io/">Main page</a></li>
-                    <li><a href="https://oxid15.github.io/projects.html">Projects</a></li>
-                    <li><a href="https://oxid15.github.io/about.html">About</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="title_container">
-            <h1 class="title">Ilia Moiseev's personal website</h1>
+        <nav>
+            <ul class="top-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="main-title-container">
+            <h1 class="main-title" id="title">Hi there, <br> I'm <span class="emp-text">Ilia Moiseev</span></h1>
         </div>
         
         <div class="text-container">
             <p>
-                Hi there, this is my personal website! My name is Ilia Moiseev (Илья Моисеев). I'm computer engineering student at South Ural State University right now and I guess until June 2021.
-                <br>
-                My interests include computer vision, data science and other related topics. Here you can find detailed 
-                <a href="https://oxid15.github.io/about.html">information about me</a> and see <a href="https://oxid15.github.io/projects.html">the description of my projects</a>
+                and this is my personal website! 
+                I'm computer engineering student at South Ural State University right now and 
+                I guess until June 2021. Here you can find detailed 
+                <a href="#about">information about me</a>, see <a href="#projects">the description of 
+                my projects</a> and find out how to <a href="#contacts">contact me or see my other profiles</a>.
             </p>
+        </div>
+        <div class="title-container">
+            <h1 class="title" id="about">About me</h1>
+        </div>
+        <div class="text-container">
+            <h3>My education</h3>
+            <p>
+                Bachelor degree in the field of computer engineering in the 
+                <a href="https://comp.susu.ru/" > Department of Electronic Computing Machines </a>
+                of <a href="https://www.susu.ru/en">South Ural State University</a>  (2017-2021).
+                <br>
+                Mathematical logic course from The National Open University "INTUIT" (2019) | <a href="https://www.intuit.ru/verifydiplomas/101220726">Certificate</a>
+                <br>
+            </p>
+            <h3>My languages</h3>
+            <p>
+                <span class="emp-text">Russian</span> is my native language. I speak 
+                <span class="emp-text">English</span> quite good, can understand 
+                everything spoken or written in English. Actually most of the books I'm reading now
+                are in English (it is technical, mathematical and fiction literature.) I have 
+                <span class="emp-text">FCE certificate</span>
+                with score 177, which means that I have level B2 (I could got C1 if it would be 180). 
+                I've got it after FCE exam in December 2019.
+            </p>
+            <p>
+                I'm interested in different languages. I've studied <span class="emp-text">German</span> 
+                when I was in school and
+                continue to study it now by myself. I can read a little and write something simple.
+            </p>
+            <h3>My interests</h3>
+            <p>
+                My interests include computer vision, data science and other related topics like
+                applied mathematics and statistics. The most of my
+                projects and publications are in these fields. I'm also interested in art, history and politics.
+                And how we can address social, political and business problems using data.
+            </p>
+            <h3>My programming experience</h3>
+            <p>
+                If we talk about programming languages, I know <span class="emp-text">C++</span> pretty well. 
+                I cannot say that I know it on
+                professional level, but I know it's low-level theory really well (like pointers and memory
+                management), can use templates. I also know
+                <span class="emp-text">C#</span> and <span class="emp-text">Python</span>.
+                I've written a lot of Python code in the last year (2019). It was DS projects and a lot of
+                CV tasks.
+                You can find examples in the <a href="#projects">project list</a> below. 
+                I have experience in using numpy, OpenCV, Keras, pandas and other popular frameworks.
+                Now I'm trying to learn <span class="emp-text">R</span> to use it in
+                my projects. 
+                <br>
+                Can't say that it's essential list of the languages that I've used in my practice,
+                but these are the ones I'm most confident about.
+            </p>
+        </div>
+
+        <div class="title-container">
+            <h1 class="title" id="projects">My projects</h1>
+        </div>
+        <div class="text-container">
+            <h2><span class="emp-text">Image Smoothing Algorithm</span> Based on Gradient Analysis</h2>
+            <h5>Scientific publication | <a href="https://ieeexplore.ieee.org/document/9117646">link</a>, 
+                <a href="https://github.com/Oxid15/Image-Smoothing-Algorithm-Based-on-Gradient-Analysis">
+                    source code</a></h5>
+            <p>
+                The paper which I've wrote with Vladimir Gudkov about new image smoothing algorithm.
+                It was published in <span class="emp-text">IEEE Xplore </span>library in June 2020.
+                <br>
+                Image smoothing aims to get rid off small insignificant details on the image and
+                to save object boundaries at the same time. It is fundamental task in image processing
+                and can be useful in many fields of computer vision.
+                <br>
+                Here is the example of the algorithm results, original and smoothed image:
+                <br>
+                <img class="image" alt="Our results" src="images/index/example.png">
+            </p>
+            <h2 class="title-w-margin">Death rates <span class="emp-text">data visualization</span> for OurCountryInData</h2>
+            <h5>Data visualization project, Jupyter Notebook | 
+                <a href="https://ourcountryindata.ru/samye-chastye-prichiny-smerti-v-zavisimosti-ot-vozrasta-i-pola/">
+                publication</a>,
+                <a href="https://github.com/Oxid15/Russian-Death-Rates-Visualization">
+                source code</a></h5>
+            <p>
+                <span class="emp-text">What causes death</span> of different age groups? To find it out I've done visualization
+                of death rates using open dataset from OurCountryInData repository. You can view all
+                plots on their site and the description of all the steps that I've got through with
+                code in Jupyter notebook in my GitHub page.
+                <br>
+                <img class="image" alt="Plot example" src="images/index/plot.png" width="800px" height="615px">
+            </p>
+            <h2 class="title-w-margin"><span class="emp-text">Image processing</span> basics</h2>
+            <h5>C++ and Python algorithms | <a href="https://github.com/Oxid15/ImageProcessing">
+                source code</a></h5>
+            <p>
+                In my practice I had to write some image processing algorithms from scratch. Some using Python
+                some using C++. So I decided to post the code to my GitHub page. Repository contains several
+                algorithms such as <span class="emp-text">Hough transform</span>
+                 and different variations of <span class="emp-text">image filtering</span>. It also has
+                 <span class="emp-text">.bmp files handler</span> written on C++ for image files reading.
+                <br>
+                The result of applying Hough transform to the image with three straight lines is on the picture.
+                <img class="image" alt="Hough transform" src="images/index/hough.png" width="800px" height="530px">
+            </p>
+            <h2 class="title-w-margin">Multilayer neural net or <span class="emp-text">Perceptron</span></h2>
+            <h5>Low-level ML C++ project - neural net from scratch | <a href="https://github.com/Oxid15/Perceptron">
+                source code</a></h5>
+            <p>
+                This is my <span class="emp-text">first and biggest </span>C++ project by this time. I was doing it initially as my course project in university,
+                but then it continued to grow and became as it is now. Repository contains source code for creating and using 
+                multilayer neural networks. I also started to develop evolutional algorithm that would help finding best network
+                architecture. It is still under developement. I tested networks that you could make with my code on classical
+                <span class="emp-text">"XOR" problem</span> and they converge as they should.
+            </p>
+        </div>
+        <div class="title-container">
+            <h1 class="bottom-title" id="contacts">Contact me</h1>
+        </div>
+        <div class="text-container">
+            <nav>
+                <ul class="list">
+                    <li>E-mail me: <a href="mailto:villeman.5@yandex.ru">villeman.5@yandex.ru</a></li>
+                    <li>My <a href="https://github.com/Oxid15">GitHub</a> page</li>
+                    <li>My <a href="https://www.linkedin.com/in/ilia-moiseev/">LinkedIn</a> page</li>
+                    <li>My <a href="https://www.kaggle.com/oxid15">Kaggle</a> page</li>
+                    <li>My <a href="https://www.behance.net/oxid15">Behance</a> page</li>
+                </ul>
+            </nav>
         </div>
     </body>
 </html>
