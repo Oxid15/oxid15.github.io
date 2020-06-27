@@ -83,7 +83,7 @@ html {
 }
 
 .top-menu{
-    padding: 2% 0% 0% 70%;
+    padding: 2% 0% 0% 60%;
 }
 
 .top-menu li {
@@ -104,4 +104,6 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 70%;
+    height: auto;
 }
