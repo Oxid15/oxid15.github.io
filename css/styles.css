@@ -54,13 +54,13 @@ h1, h2, h3, h4, h5{
 }
 
 .subtitle{
-    color:#ff5733;
+    color:#ffb133;
     text-align: left;
     margin-right: 5%;
     margin-left: 5%;
 }
 
-.title-container{
+.title-container-w-margin{
     margin-top: 30rem;
 }
 
@@ -83,20 +83,54 @@ html {
 }
 
 .top-menu{
-    padding: 2% 0% 0% 60%;
+    padding: 5% 25% 0% 0%;
+    margin-right: 0%;
+    float: right;
+    display: flex;
 }
 
 .top-menu li {
-    display: inline-block;
-    padding: 0% 10% 0% 0%;
+    display: block;
+    padding: 0% 0% 0% 0%;
+    margin-left: 15%;
+}
+
+.index_logo{
+    display: block;
+    margin-left: 5%;
+    margin-right: auto;
+    padding-top: 5%;
+    width: 10%;
+    height: auto;
+    float:left;
+}
+
+.small_logo{
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: auto;
 }
 
 .list{
     text-align: center;
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    padding-bottom: 200px;
+    padding: 0% 0% 0% 0%;
+}
+
+.table-of-contents{
+    list-style-type: square;
+    color: #ff5733;
+    padding-left: 10%;
+}
+
+.references{
+    list-style-type: decimal;
+    padding-left: 10%;
 }
 
 .image{
@@ -106,4 +140,36 @@ html {
     margin-right: auto;
     width: 70%;
     height: auto;
+}
+
+.post-container{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.post-description{
+    font-size: 1.1rem;
+}
+
+.post-title{
+    margin: 0;
+    padding: 0;
+}
+
+.post-subtitle{
+    margin: 0;
+    padding: 0;
+}
+
+.letter{
+    font-size: 6.3rem;
+    color:#ffb133;
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    padding-top: 0.03em;
+}
+
+.math{
+    text-align: center;
 }
