@@ -2,9 +2,11 @@ body {
     line-height: 1.7;
     color: #cfcfd1;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.7rem;
     background: #232531;
     font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+    margin-left:10%;
+    margin-right:10%; 
 }
 
 a{
@@ -19,7 +21,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5{
-  font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+  font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .main-title{
@@ -162,7 +164,7 @@ html {
 }
 
 .letter{
-    font-size: 6.3rem;
+    font-size: 5.5rem;
     color:#ffb133;
     font-weight: bold;
     float: left;
