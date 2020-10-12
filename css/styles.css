@@ -175,3 +175,32 @@ html {
 .math{
     text-align: center;
 }
+
+@-webkit-keyframes important {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+@-moz-keyframes important {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+@keyframes important {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+
+.important-link {   
+    background: linear-gradient(229deg, #ffb133, #cfcfd1, #ff5733);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: important 7s ease-in-out infinite;
+    -moz-animation:    important 7s ease-in-out infinite;
+    animation:         important 7s ease-in-out infinite;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
