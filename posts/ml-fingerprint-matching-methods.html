@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Machine Learning Fingerprint Maching Methods">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Machine Learning Fingerprint Maching Methods</title>
+    <link rel="stylesheet" href="../styles.css" media="screen">
+    <link rel="stylesheet" href="posts.css" media="screen">
+    <script class="u-script" type="text/javascript" src="../jquery.js" defer="defer"></script>
+    <script class="u-script" type="text/javascript" src="../script.js" defer="defer"></script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900%7CRoboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "../images/icon1.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="ML Fingerprint Matching Methods: Brief overview">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body">
+    <header class="u-black u-clearfix u-header u-header" id="sec-ec72">
+      <div class="u-clearfix u-sheet u-sheet-1"> <a href="../index.html" data-page-id="46058780"
+          class="u-image u-logo u-image-1" data-image-width="550" data-image-height="550"
+          title="Home"> <img src="../images/icon1.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-grey-75 u-nav-link u-text-active-palette-1-base u-text-custom-color-2 u-text-hover-palette-2-base"
+
+              href="#" style="font-size: calc(1em + 14px); padding: 7px 10px;">
+              <svg viewBox="0 0 24 24"><use xlink="http://www.w3.org/1999/xlink"
+
+                  xlink:href="#menu-hamburger"></use></svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"><defs><symbol
+
+                    id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect
+
+                      y="1" width="16" height="2"></rect><rect y="7" width="16"
+
+                      height="2"></rect><rect y="13" width="16" height="2"></rect>
+                  </symbol> </defs></svg> </a> </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1">
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-custom-color-2 u-text-hover-white"
+
+                  href="../index.html" style="padding: 10px 6px 10px 20px;">Home</a>
+              </li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-custom-color-2 u-text-hover-white"
+
+                  href="../posts.html" style="padding: 10px 6px 10px 20px;">Posts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../index.html"
+
+                      style="padding: 10px 6px 10px 20px;">Home</a> </li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../posts.html"
+
+                      style="padding: 10px 6px 10px 20px;">Posts</a> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+      <div class="u-block u-title-block">
+        <h1 class="u-title">ML Fingerprint Matching Methods</h1>
+        <p class="u-subtitle">Brief overview</p>
+        <p class="u-date">16.10.2022</p>
+      </div>
+
+      <div class="u-block">
+      <h2 class="u-title-2">Foreword</h2>
+        <p class="u-text">
+            During first year of my master's program I was assigned the task to make a literature review
+            on the topic of interest. Back then I haven't decided on my master thesis topic, so it wasn't the option.
+            The topic I specialized on previously was not quiet a challenge for me, I was somewhat tired of
+            image smoothing topic (for the interested <a href="https://ieeexplore.ieee.org/document/9117646" class="u-active-none u-border-none u-button-link u-button-style u-hover-none u-none u-text-custom-color-2 u-btn-1">paper</a>, <a href="https://github.com/Oxid15/Image-Smoothing-Algorithm-Based-on-Gradient-Analysis" class="u-active-none u-border-none u-button-link u-button-style u-hover-none u-none u-text-custom-color-2">code</a>)
+            so I decided to choose another topic that I was working on previously.<br>
+            So this is pretty much how this text emerged. It is an overview of how ML-techniques are used in the field of
+            fingerprint matching. For the moment of me writing that overview, I haven't found any similar works in the
+            literature, which is in my opinion an overlook for the field. The work on this topic should be more
+            broad than my toy-overview, but in my opinion the field of fingerprint-tasks lacks the works like that.
+        </p>
+      </div>
+
+    <div class="u-block">
+    <h2 class="u-title-2">Introduction</h2>
+        <p class="u-text">
+        Fingerprints are one of the most reliable ways to identify a person. Patterns contained in the fingerprints are
+        consistent and are not changing during the lifetime of an adult. In addition to that, they are extremely unique and
+        can't simply be lost. Based on these advantages, fingerprints have wide area of application and were first introduced
+        as a method of an identification of a person almost 100 years ago.<br><br>
+        Firgerprint matching was automated almost 50 years ago and since that, the tools which are used for identification were in the process of improvement and change [7]. This
+        process continues to this day and new methods emerge. In the last years machine learning (ML) techniques achieved
+        the results better than the classical methods in the number of image processing tasks. This change affected
+        fingerprint tasks accordingly and in the last years there are a number of attempts to apply new methods. However,
+        due to the specific traits of the fingerprint-related tasks new algorithms occasionally <b>have a hard time competing
+        with the classical ones </b> in the quality of the results and computational performance.<br><br>
+        This work is aimed to give an overview of the application of machine learning techniques in the field of
+        fingerprint verification and identification.
+        </p>
+    </div>
+
+    <div class="u-block">
+    <h2 class="u-title-2">Methodology</h2>
+        <p class="u-text">
+        The purpose of this review is to highlight the work that was done by the researchers and engineers in the
+        development of automated fingerprint matching techniques with the usage of machine learning.<br><br>
+        Before we can proceed to the methodology section, the definition of fingerprint matching should be given as it is
+        considered in this work. In this work the term fingerprint matching is used to unite the related tasks in the field -
+        verification and identification. <b>Verification</b> is the task in which a pair of fingerprints is given as input and the
+        decision whether the pair of fingerprints is from the same finger is expected as the output. In the task of
+        <b>identification</b> a query fingerprint is given and the goal is to retrieve corresponding fingerprint from a large database
+        or return nothing if there is no such fingerprint.<br><br>
+        Description of methodology will consist of the following parts: search databases, keywords which were used to
+        search related papers, include criteria, exclude criteria and several other selection principles.
+        For the search of the related articles Scopus, Web Of Science and Google Scholar databases were used. This set
+        of databases considering its size provided broad overview of the topic in the discussion. Keywords that were used
+        are: <code>fingerprint recognition</code>, <code>machine learning</code>, <code>neural network</code>,
+        <code>fingerprint verification</code>. These keywords
+        were used in different combinations to find related articles.<br><br>
+        Include criteria were the following: the paper should be related to the task of verification or identification as close
+        as possible. The language of the papers should be English. As exclude criteria “the absence of machine learning
+        approaches” was selected. The field of automated fingerprint processing is relatively narrow and the use of machine
+        learning in it is not so common so the last 10 years (papers since 2011) were used as the limit for the year of
+        publication.<br><br>
+        In the next section results of the literature review will be presented. Different comparison criteria will be
+        described and applied to the selected papers.
+        </p>
+    </div>
+    
+    <div class="u-block">
+    <h2 class="u-title-2">Results</h2>
+        <p class="u-text">
+            Fingerprint matching is a challenging task due to the fact that image acquisition process is not perfect and nonrigid nature of the transformations that occur in that process. These transformations are the main source of the
+            complexity of the task since making model of such transformations is challenging.
+            Since machine learning approaches are achieving significant results in other fields of computer vision,
+            researchers in the field of fingerprint processing are trying to apply them to the corresponding tasks. The type of the
+            task is the most fundamental comparison criterion which can be used.<br><br>
+            For this review papers that were relevant to the tasks of verification and identification were selected. On the figure
+            the distribution of the tasks, selected papers was meant to tackle. Regardless of the particular task, all of them
+            were relevant to the tasks mentioned earlier. For example minutia extraction was the part of the verification system [1].
+            <br><br>
+        </p>
+            <img class="u-image" src="../images/fingerprint_tasks.png" alt="papers-by-task">
+            <p class="u-image-desc">
+                Papers by the task
+            </p>
+        <p class="u-text">
+            <b>Classification</b> of fingerprints is the task of defining the global pattern class. Pattern is formed by the ridges and
+            valleys. All of the fingerprint patterns can be classified into several categories. Two papers on the topic of
+            classification were added to the review, because methods that were applied are general and can in similar fashion be
+            used for other purposes [2, 3].<br><br>
+        </p>
+            <img class="u-image" src="../images/fingerprint-patterns.jpg" alt="fingerprint-patterns">
+            <p class="u-image-desc">
+                Simple illustration of different fingerprint patterns. Image from the <a href="https://www.researchgate.net/publication/299359579_Hot_on_the_Trail_of_Genes_that_Shape_Our_Fingerprints">paper</a>.
+            </p>
+        <p class="u-text">
+            Generic pipeline of any fingerprint processing consists of the following stages:
+        </p>
+            
+        <ul class="u-text">
+            <li>Image acquisition</li>
+            <li>Image preprocessing and enhancement</li>
+            <li>Feature extraction</li>
+            <li>Matching / Classification</li>
+        </ul>
+        <p class="u-text">
+            Based on that, we can classify different approaches by the part, to which machine learning approach was applied.
+            Some reviewed papers have their machine learning approaches in the feature extraction part, for example in the work
+            of P. Marák and A. Hambalík [3] convolutional neural network (CNN) was used to refine the locations of the local
+            fingerprint features - minutiae. In the number of papers several different classifiers are used in the last decision step
+            - for matching or classification.<br>
+            The paper of A. Balti et al. being not so recent is still a good example of that. It
+            describes the process of classical preprocessing and feature extraction methods and the neural network-based
+            classifier on the end of the pipeline that is trained to perform the task of verification given the vector of features [4].
+            Machine learning approach can be used even in between two stages of the generic pipeline described. <br>
+            This was done
+            in the paper [5], where authors used CNN (Google's Inception model) between image acquisition and image
+            preprocessing stages to not allow the images that was acquired with poor quality to pass further down the pipeline,
+            which increased the quality of verification system. Not only single stages can be replaced by machine learning
+            algorithms. Since one of the strongest properties of the neural networks is feature extraction of different levels,
+            many authors suppose that it is not necessary to manually engineer features for proper work of the fingerprint
+            matchers. Based on that, several attempts were made to learn some fingerprint task in end to end fashion. This is not
+            mean that the whole pipeline was replaced by the single network, but the last two stages at least. <br>
+            The paper [6] can
+            serve as an example of the kind of approach described. Pretrained on ImageNet dataset AlexNet model was used
+            with shared weights to make a concatenated vector of a fingerprint pair to classify whether it is from the same finger.
+            This approach is similar to siamese network, but it uses concatenated features from both fingerprints instead of
+            computing some sort of contrastive loss as it is commony done with the similar architectures.To understand the
+            distribution of where different authors position machine learning approaches the following plot is presented.
+            <br><br>
+        </p>
+            <img class="u-image" src="../images/fingerprint_position.png" alt="papers-by-position">
+
+            <p class="u-image-desc">
+                Papers by the position in the pipeline
+            </p>
+        <p class="u-text">
+            It can be seen from the figure that the most popular solutions with machine learning include its methods in the
+            classifier stage. It means that the authors manually produced features that are extracted from fingerprint image and
+            used machine learning at the stage of the final solution. In the paper [8] the authors proposed exactly this kind of
+            identification pipeline. Their work in the features they use is similar to the ones in [4], but they use the same features
+            for another task. Authors use distance from the center point as a feature vector. The core of the method is simple
+            neural network which is trained on the vector of sorted distances between the singularity and the minutiae. Authors
+            propose it to use in the process of comparison of the fingerprint features to perform identification.
+            The second popular solution is the attempt to incorporate as many stages as can be into the one neural network
+            and train it end-to-end with the (preprocessed) images on the input and the desired decisions in the output. The
+            authors of [9] choose this kind of solutions. They used end-to-end learning to extract features and use their network
+            for verification and identification purposes. VGG-16 model was used as the framework. Obtained model was tested
+            with verification task and as a feature extractor for the acceleration of identification process.
+            Aside from the place of the machine learning model in the pipeline, there is also a way of comparing different
+            approaches. This way is to look at the types of methods researchers use in their solutions. Since fingerprints are in
+            their essence image data, it is expected to see convolutional neural networks in the solutions. The distribution of
+            types of machine learning methods can be seen on the next figure.
+            <br><br>
+        </p>
+            <img class="u-image" src="../images/fingerprint_models.png" alt="papers-by-model">
+
+            <p class="u-image-desc">
+                Papers by the model used
+            </p>
+        <p class="u-text">
+            The distribution presented on the figure shows the prevalence of CNN-based approaches, but as it was already
+            said machine learning methods are commonly placed in the position of final classifier, so basic neural networks are
+            also common. Another aspect that can be read from the chart is that non-neural algorithms are not so frequently
+            used. This can be due to the scope of this review and the keywords used. Fingerprint matching approaches are
+            commonly use support vector machines (SVM), but supposedly they were used before the emergence of the term
+            “machine learning” itself. If SVM`s would be added to the keyword list, different results could be seen on the chart.
+            The approach that is denoted with the type of method “Random forest” is implemented in the work [10]. The
+            description on the chart was made for brevity - authors used several different tree-based methods on the classifier
+            stage for the task of identification. Their results show that random forest achieves better results than REPTree,
+            Random Tree, J48 and Decision Stump, when simple statistical measures are passed as input to identify the
+            fingerprint. This method is not based on the extraction of the minutiae aside from singularity detection. When the
+            singularity of the fingerprint is detected, 100x100 crop is made with it in the centre and in this area several statistical
+            metrics are calculated. Metrics include variance, maximum probability, homogeneity, entropy, etc. These metrics
+            are in some way reliable, since they are rotation invariant, which is important in the fingerprint matching since
+            fingers can be rotated during the image acquisition stage. However, statistical metrics cannot be robust to the
+            variations in the image itself. If the method of obtaining fingerprint image would change (e.g. the scanner changed
+            from optical to capacital) statistics could change dramatically, while local minutia features could remain.
+            Supposedly the most important part of the solutions is not the methods used, but the performance that is achieved
+            with them. Performance in the tasks of identification of verification is measured with similar metrics, but the values
+            could differ between the tasks. Direct comparison of the performance is also complicated by the fact that
+            performance may be assessed using different databases and different metrics. Table 1 gives an overview of different
+            databases that is used for performance assessment and the metrics themselves.
+        </p>
+
+        <table class="u-table">
+            <th>The approach</th>
+            <th>Method description</th>
+            <th>Is method minutia-based</th>
+            <th>FVC2002</th>
+            <th>FVC2004</th>
+            <th>FVC</th>
+            <th>PolyU</th>
+            <th>CrossMatch Verifier 300 sensor</th>
+            <th>Custom data</th>
+            <tr>
+                <td>
+                    B. O. Alijla et al. [1]
+                </td>
+                <td>
+                    CNN for minutia extraction
+                </td>
+                <td>
+                    Yes
+                </td>
+                <td>
+                    Acc: 91.6
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    S. Minaee et al. [2]
+                </td>
+                                
+                <td>
+                    End2End CNN for classification
+                </td>
+                <td>
+                    No
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Acc: 95.7
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    P. Marák et al. [3]
+                </td>
+                <td>
+                    CNN as feature extractor
+                </td>
+                <td>
+                    Yes
+                </td>
+                <td>
+                    EER: 33
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    EER: 8
+                </td>
+                <td>
+                    -
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    A. Balti et al. [4]
+                </td>
+                <td>
+                    NN as the classifier
+                </td>
+                <td>
+                    Yes
+                </td>
+                <td>
+                    EER: 5.15
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    V. M. Praseetha [5]
+                </td>
+                <td>
+                    Pre-validation
+                </td>
+                <td>
+                    Yes
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    FAR: 0.1
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    B. Bakhshi [6]
+                </td>
+                <td>
+                    End2End CNN, in siamese manner for verification
+                </td>
+                <td>
+                    No
+                </td>
+                <td>
+                    EER: 17.5
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    L. T. Nguyen [8]
+                </td>
+                <td>
+                    NN as the classifier
+                </td>
+                <td>
+                    Yes
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Acc: 97.75
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Y. Liu [9]
+                </td>
+                <td>
+                    End2End CNN verif. and identif.
+
+                </td>
+                <td>
+                    No
+                </td>
+                <td>
+                    EER: 2.91
+                </td>
+                <td>
+                    ERR: 3.72
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    H. Jan [10] 
+                </td>
+                <td>
+                    Classifier of statist. descriptors
+                </td>
+                <td>
+                    No
+                </td>
+                <td>
+                    Prec: 59
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    K. Wxh [11] 
+                </td>
+                <td>
+                    No
+                </td>
+                <td>
+                    EER: 2.18
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+            </tr>
+        </table>
+
+        <p class="u-text">
+            The table gives several insights about the state of the field of ML-techniques in fingerprint matching tasks. First
+            is about the usage of databases. The latest database now is the FVC onGoing, which is the evolution of the
+            fingerprint verification competitions that took part earlier from 2000 to 2006 [12]. However, the most used database
+            is the FVC2002. The explanation could be that this is due to the back-compatibility - so the previous works could be
+            compared with the current, but the problem is that not so many authors actually do comparison of their results to
+            other approaches to the same problem.
+            The other result of the comparison that can be seen from the table is the difficulty of comparison, since the
+            authors do not include ubiquitous quality metrics in theirs work such as EER. The metrics denoted in the table are
+            Acc - accuracy, Prec - precision, FAR - false-acceptance rate and EER - equal error rate. The actual meaningful
+            comparison that can be done is on the FVC2002 by the EER metric shows that the results of usage of machine
+            learning methods vary in quality. If the relative values of EER are considered it can be seen that the methods, which
+            use end to end learning (with no manual engineered features) achieve generally better results than the methods,
+            where only one part of the matching process is replaced by the machine learning algorithm.
+            Another characteristic of the current trend is that new approaches are no longer use minutiae as the features. This
+            is also refers to the manual construction of features. The tendency is that minutiae-based approaches are replacing
+            with the new automatically extracted features, which have no interpretation. The performance increase is
+            understandable benefit, but the problem of interpretability is not currently solved, which is crucial for use new types
+            of algorithms in law-enforcement and criminalistics.
+        </p>
+    </div>
+
+    <div class="u-block">
+    <h2 class="u-title-2">Conclusion</h2>
+        <p class="u-text">
+            In this work the review of fingerprint matching methods with the usage of machine learning was made. The
+            results show how machine learning algorithms are currently used, what is their performance and how they can be
+            compared.<br><br>
+            The most popular approach is to use machine learning method to classify existed manually-engineered features.
+            However, the attempts to make an end to end architecture which could extract features and classify based on them
+            are extensively made. The results of these attempts are comparable with other approaches, but the models may not
+            be robust for rotations and heavily depend on the preprocessing stage, so the problem of making rotation-invariant
+            and quality robust end to end model is still open and needs further investigation.
+            The most popular approach in the model selection is the state-of-the-art CNN model pretrained on the general
+            image classification dataset. This is a good approach for a general research and can achieve good results, but the real
+            applications require computation on the edge devices, which in general cannot run such big models at least on
+            acceptable speed, so the problem of computational performance and the usage of lightweight models is also still
+            present.<br><br>
+            Quality of the results can be directly compared only with the usage of the same databases and similar metrics. For
+            the sake of fair comparison authors should provide the result of experiments on conventional databases and with the
+            usage of common metrics.
+        </p>
+    </div>
+
+    <div class="u-block">
+        <h2 class="u-title-2">References</h2>
+            <ul class="u-text">
+                <li>[1] B. O. Alijla, M. Saad, and S. F. Issawi, “Neural Network-based Minutiae Extraction for Fingerprint Verification System,” 2017 8th Int. Conf.</li>
+                Inf. Technol., pp. 435–441, 2017.
+                <li>[2] S. Minaee, E. Azimi, and A. Abdolrashidi, “FingerNet: Pushing The Limits of Fingerprint Recognition Using Convolutional Neural Network,”</li>
+                2019.
+                <li>[3] P. Marák and A. Hambalík, “Fingerprint Recognition System Using Artificial Neural Network as Feature Extractor: Design and Performance</li>
+                evaluation,” Tatra Mt. Math. Publ., vol. 67, no. 1, pp. 117–134, 2016.
+                <li>[4] A. Balti, M. Sayadi, and F. Fnaiech, “Fingerprint verification based on back propagation neural network,” Control Eng. Appl. Informatics, vol.</li>
+                15, no. 3, pp. 53–60, 2013.
+                <li>[5] V. M. Praseetha, S. Bayezeed, and S. Vadivel, “Secure fingerprint authentication using deep learning and minutiae verification,” J. Intell.</li>
+                Syst., vol. 29, no. 1, pp. 1379–1387, 2020.
+                <li>[6] B. Bakhshi and H. Veisi, “End to End Fingerprint Verification Based on Convolutional Neural Network,” ICEE 2019 - 27th Iran. Conf. Electr.</li>
+                Eng., pp. 1994–1998, 2019.
+                <li>[7] D. Maltoni, D. Maio, A.K. Jain, “Handbook of Fingerprint Recognition,” Springer-Verlag, London, 494 p. 2009.</li>
+                <li>[8] L. T. Nguyen, H. T. Nguyen, A. D. Afanasiev, and T. Van Nguyen, “Automatic Identification Fingerprint Based on Machine Learning</li>
+                Method,” J. Oper. Res. Soc. China, 2021.
+                <li>[9] Y. Liu, B. Zhou, C. Han, T. Guo, and J. Qin, “A novel method based on deep learning for aligned fingerprints matching,” Appl. Intell., vol. 50,</li>
+                no. 2, pp. 397–416, 2020.
+                <li>[10] H. Jan, A. Ali, and S. Mahmood, “Statistical Descriptors-based Automatic Fingerprint Identification: Machine Learning Approaches,” arXiv</li>
+                Prepr., 2019.
+                <li>[11] K. Wxh and W. Likoei, “Small Area Fingerprint Verification Using Deep Convolutional Neural Network,” vol. 3, pp. 5–10, 2020.</li>
+                <li>[12] FVC onGoing . Accessed: Sept. 24, 2021. [Online]. Available: https://biolab.csr.unibo.it/FVCOnGoing/UI/Form/Home.aspx</li>
+            </ul>
+        </div>
+
+
+    <footer class="u-align-center u-black u-clearfix u-footer" id="sec-550d">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Ilia Moiseev | <a href="mailto:ilia.moiseev.5@yandex.ru"
+            class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-2 u-btn-1">ilia.moiseev.5@yandex.ru</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
