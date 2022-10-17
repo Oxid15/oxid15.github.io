@@ -49,6 +49,21 @@
   text-align: center;
 }
 
+.u-block .u-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+.u-block .u-table th {
+    font-weight: 600;
+  }
+
+.u-block .u-table tr, th {
+    text-align: left;
+  }
+
+.u-block .u-table tr:hover {background-color: #c10c0c71;}
+
 @media (max-width: 991px) {
   .u-block{
     margin-left: 15%;
