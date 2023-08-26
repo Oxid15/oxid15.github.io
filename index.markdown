@@ -4,3 +4,6 @@
 
 layout: home
 ---
+
+Hello! This website is currently under construction.
+You can proceed to my linkedin or github profiles instead!
