@@ -1,5 +1,5 @@
 ---
-1. layout: post
+layout: post
 title:  "Review of image smoothing algorithms"
 date:   2020-09-22 00:00:00 +0000
 categories: posts en
