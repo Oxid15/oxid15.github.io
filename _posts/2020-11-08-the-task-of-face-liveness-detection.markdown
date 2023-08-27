@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The task of face liveness detection"
+title:  "The Task of Face Liveness Detection"
 date:   2020-11-08 00:00:00 +0000
 categories: posts en
 tags: liveness_detection

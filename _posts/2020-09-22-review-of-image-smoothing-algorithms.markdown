@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Review of image smoothing algorithms"
+title:  "Review of Image Smoothing Algorithms"
 date:   2020-09-22 00:00:00 +0000
 categories: posts en
 tags: image_smoothing

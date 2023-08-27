@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cascade project"
+title:  "Cascade Project"
 date:   2022-07-22 00:00:00 +0000
 categories: posts en
 tags: cascade mlops
