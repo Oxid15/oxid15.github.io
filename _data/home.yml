@@ -1,0 +1,25 @@
+project_entries:
+  - title: Project 1
+    url: overview-post
+    desc: This is an example project
+
+  - title: Project 2
+    url: overview-post
+    desc: This is an example project
+
+  - title: Project 3
+    url: overview-post
+    desc: This is an example project
+
+  - title: Project 4
+    url: overview-post
+    desc: This is an example project
+    highlight: WIP
+
+  - title: Project 5
+    url: overview-post
+    desc: This is an example project
+
+  - title: Project 6
+    url: overview-post
+    desc: This is an example project
