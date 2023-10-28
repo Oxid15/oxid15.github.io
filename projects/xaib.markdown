@@ -15,4 +15,4 @@ links:
     url: https://doi.org/10.5281/zenodo.8011625
 ---
 
-The program allows to create and train neural networks with arbitrary number of layers and neurons. Python scripts allow to convert neural nets from Tensorflow .pb format to the custom format of this repository with the extension .nn. The inference results should remain the same.
+XAIB is an open benchmark that provides a way to compare different XAI methods using broad set of metrics that were built to measure different aspects of interpretability
