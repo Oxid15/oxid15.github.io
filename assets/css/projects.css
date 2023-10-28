@@ -32,16 +32,6 @@ ul.horizontal-list {
     margin-left: 40px;
     flex-wrap: wrap;
     list-style-type: none;
-
-    li {
-        display: inline;
-        margin-right: 1em;
-    }
-
-    li a {
-        text-decoration: none;
-        font-weight: normal
-    }
 }
 
 
@@ -51,11 +41,6 @@ ul.horizontal-list {
         display: block;
         margin-bottom: 1em;
         margin-left: 1em;
-
-        a,
-        .header {
-            font-size: 1em;
-        }
     }
 }
 
@@ -78,7 +63,8 @@ hr.page-break {
 
 mark {
     background-color: #00aeff;
-    color: #000;
+    color: #ffffff;
     border-radius: 20%;
     padding: 2%;
+    margin-left: 5px;
 }

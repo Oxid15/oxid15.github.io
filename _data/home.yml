@@ -2,24 +2,36 @@ project_entries:
   - title: Project 1
     url: overview-post
     desc: This is an example project
+    image_url: https://avatars.githubusercontent.com/u/31771351?v=4
 
   - title: Project 2
     url: overview-post
     desc: This is an example project
+    image_url: https://avatars.githubusercontent.com/u/31771351?v=4
 
   - title: Project 3
     url: overview-post
     desc: This is an example project
+    image_url: https://avatars.githubusercontent.com/u/31771351?v=4
 
   - title: Project 4
     url: overview-post
     desc: This is an example project
+    image_url: https://avatars.githubusercontent.com/u/31771351?v=4
     highlight: WIP
 
   - title: Project 5
     url: overview-post
     desc: This is an example project
+    image_url: https://avatars.githubusercontent.com/u/31771351?v=4
 
   - title: Project 6
     url: overview-post
     desc: This is an example project
+    image_url: https://avatars.githubusercontent.com/u/31771351?v=4
+
+page_paths:
+  - title: Posts
+    url: /posts.html
+  - title: Projects
+    url: /projects.html
