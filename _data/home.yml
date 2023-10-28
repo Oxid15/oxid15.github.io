@@ -1,34 +1,29 @@
 project_entries:
-  - title: Project 1
-    url: overview-post
-    desc: This is an example project
-    image_url: https://avatars.githubusercontent.com/u/31771351?v=4
+  - title: Cascade
+    url: /projects/en/cascade.html
+    desc: MLOps library
+    image_url: 
 
-  - title: Project 2
-    url: overview-post
-    desc: This is an example project
-    image_url: https://avatars.githubusercontent.com/u/31771351?v=4
+  - title: XAIB
+    url: /projects/en/xaib.html
+    desc: Benchmark for interpretability methods
+    image_url: 
 
-  - title: Project 3
-    url: overview-post
-    desc: This is an example project
-    image_url: https://avatars.githubusercontent.com/u/31771351?v=4
+  - title: Theme
+    url: /projects/en/theme.html
+    desc: CLI text labeling tool
+    image_url: 
 
-  - title: Project 4
-    url: overview-post
-    desc: This is an example project
-    image_url: https://avatars.githubusercontent.com/u/31771351?v=4
-    highlight: WIP
+  - title: Image Smoothing Algorithm
+    url: /projects/en/image-smoothing-algorithm.html
+    desc: Smoothing based on gradients analysis 
+    image_url: 
+    # highlight: WIP
 
-  - title: Project 5
-    url: overview-post
-    desc: This is an example project
-    image_url: https://avatars.githubusercontent.com/u/31771351?v=4
-
-  - title: Project 6
-    url: overview-post
-    desc: This is an example project
-    image_url: https://avatars.githubusercontent.com/u/31771351?v=4
+  - title: Perceptron
+    url: /projects/en/perceptron.html
+    desc: C++ implementation of neural network, TF compatible
+    image_url: 
 
 page_paths:
   - title: Posts
