@@ -1,0 +1,32 @@
+project_entries:
+  - title: Cascade
+    url: /projects/en/cascade.html
+    desc: MLOps library
+    image_url: 
+
+  - title: XAIB
+    url: /projects/en/xaib.html
+    desc: Benchmark for interpretability methods
+    image_url: 
+
+  - title: Theme
+    url: /projects/en/theme.html
+    desc: CLI text labeling tool
+    image_url: 
+
+  - title: Image Smoothing Algorithm
+    url: /projects/en/image-smoothing-algorithm.html
+    desc: Smoothing based on gradients analysis 
+    image_url: 
+    # highlight: WIP
+
+  - title: Perceptron
+    url: /projects/en/perceptron.html
+    desc: C++ implementation of neural network, TF compatible
+    image_url: 
+
+page_paths:
+  - title: Posts
+    url: /posts.html
+  - title: Projects
+    url: /projects.html
