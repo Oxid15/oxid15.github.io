@@ -3,7 +3,7 @@ layout: project
 permalink: /projects/en/theme.html
 project-name: Theme
 subtitle: Minimal CLI-based text labeling tool
-start-date: Jul 2018
+start-date: Dec 2022
 links:
   - title: GitHub page
     url: https://github.com/Oxid15/theme
