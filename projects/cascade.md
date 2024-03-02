@@ -17,7 +17,7 @@ references:
   - title: Awesome MLOps, Model Lifecycle section
     url: https://github.com/kelvins/awesome-mlops#model-lifecycle
   - title: How I (Re)implemented Metrics in Cascade
-    url: /posts/2024-03-02-reimplementation-of-metrics-in-cascade.md
+    url: /posts/en/2024/03/02/reimplementation-of-metrics-in-cascade.html
   - title: Cascade announce post
     url: /posts/en/2022/07/22/cascade-announce.html
 ---
