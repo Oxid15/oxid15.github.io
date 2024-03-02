@@ -1,0 +1,21 @@
+pre, code { font-size: 15px; background-color: #00000000;
+    font-family:'Cascadia Code', monospace; border-radius: 10px; color: #465052;
+    border-width: 2px;}
+
+.highlighter-rouge .highlight { background: #ffffff; border-radius: 0px; 
+    border-width: 2px;  border-color: #ebebeb;}
+
+.highlight .n { color: #839496}
+.highlight .nc { color: #2aa198}
+.highlight .nn { color: #2aa198}
+.highlight .nb { color: #d33682}
+.highlight .s { color: #859900}
+.highlight .s2 { color: #859900}
+.highlight .p { color: #839496}
+.highlight .dl { color: #839496}
+.highlight .c { color: #586e75 }
+.highlight .k { color: #cb4b16 }
+.highlight .kn { color: #cb4b16 }
+.highlight .o { color: #6c71c4 }
+.highlight .nf { color: #2aa198 }
+.highlight .bp { color: #cb4b16 }
