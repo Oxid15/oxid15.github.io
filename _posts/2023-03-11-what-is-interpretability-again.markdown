@@ -16,13 +16,36 @@ The overview also has a lot of interesting links, so for anyone who wants to div
 
 ## Interpretability
 
-In interpretability-related literature there are a lot of statements about the essence of the field - the interpretability itself. Foundational concepts like these are usually hard to define. A multitude of answers for a question of some key concept in a common situation in every field of knowledge, however in other fields some agreements or mainstream definitions are established, which is not true for XAI field.The most common way to approach a question of definition is the following: "interpretability is the ability to explain or to present in understandable terms to a human" [1]. This is the definition given in the work of Doshi-Velez and Been Kim, who argue for uniformity and rigor in the science of interpretable machine learning. They also state that interpretability has different definitions in social and computer science respectively.
+In interpretability-related literature there are a lot of statements about the essence of the field - the interpretability itself. Foundational concepts like these are usually hard to define. A multitude of answers for a question of some key concept in a common situation in every field of knowledge, however in other fields some agreements or mainstream definitions are established, which is not true for XAI field.The most common way to approach a question of definition is the following:
 
-Similar approaches can be found in works of [9], [1] and [15]. The formulation authors provide is more or less the same, stating: “interpretability is the ability to explain the model outcome in understandable ways to a human” in [9]. Barredo et al. adds "or to provide the meaning" to "the ability to explain" [17]. [1] goes along the same line adding "to present" supposedly amplifying the role of presentation and the interface when communication an explanation to a user. Nauta et al. in their overview make no distinction between interpretability and explainability for inclusion reasons - they didn't want to exclude some paper from the overview because of the difference in terminology. They state: "an explanation is a presentation of (aspects of) the reasoning, functioning and/or behavior of a machine learning model in human-understandable terms" [2]. This definition is more broad, but goes along the lines of "presenting something in human-understandable form". However, they specify the subject of presentation as reasoning, functioning or behavior or aspects of any of this, which other authors usually omit.
+> interpretability is the ability to explain or to present in understandable terms to a human [1].
 
-Another similar in words, but very different in meaning way to put the definition is the causation approach. Some argue that causation is not needed for an explanation whereas some disagree. For example the definition from the work of Tim Miller [8] which is claimed to stem from the work of Biran and Cotton [7] is formulated as: "interpretability in machine learning is the degree to which an observer can understand the cause of a decision from an ML model". The explainability in the work of Miller is equated with interpretability. Explanation is also regarded as an answer to a "why-question". A why question is defined as a complex entity which is composed of presupposition, whether-question and obviously a word "why". For example the question "why the model gave this answer" is composed of the word "why", question "did the model gave this answer?" and presupposition being "the model gave this answer". Miller also argues that the structure is not always that simple because explanations are also contrastive and the opposition of some decision that was made to the other that wasn't is very important.
+This is the definition given in the work of Doshi-Velez and Been Kim, who argue for uniformity and rigor in the science of interpretable machine learning. They also state that interpretability has different definitions in social and computer science respectively.
 
-The work of [19] takes the perspective of predictability or simulatability [4] - the ability of a human to predict model's behavior. They state: "Interpretability refers to the intrinsic properties of a deep model measuring in which degree the inference result of the deep model is predictable or understandable to human beings" [19]. The interpretability is by their definition an intrinsic property of a model which corresponds to the predictability of its behavior by a human. This goes in contrast to some other works because here interpretability becomes measure of what is called simulatability and considering this loses its own distinctive meaning.
+Similar approaches can be found in works of [9], [1] and [15]. The formulation authors provide is more or less the same, stating:
+>interpretability is the ability to explain the model outcome in understandable ways to a human” in [9].
+
+Barredo et al. adds 
+
+>"or to provide the meaning" to "the ability to explain" [17].
+
+[1] goes along the same line adding "to present" supposedly amplifying the role of presentation and the interface when communication an explanation to a user. Nauta et al. in their overview make no distinction between interpretability and explainability for inclusion reasons - they didn't want to exclude some paper from the overview because of the difference in terminology. They state: 
+
+>an explanation is a presentation of (aspects of) the reasoning, functioning and/or behavior of a machine learning model in human-understandable terms [2].
+
+This definition is more broad, but goes along the lines of "presenting something in human-understandable form". However, they specify the subject of presentation as reasoning, functioning or behavior or aspects of any of this, which other authors usually omit.
+
+Another similar in words, but very different in meaning way to put the definition is the causation approach. Some argue that causation is not needed for an explanation whereas some disagree. For example the definition from the work of Tim Miller [8] which is claimed to stem from the work of Biran and Cotton [7] is formulated as:
+
+> interpretability in machine learning is the degree to which an observer can understand the cause of a decision from an ML model.
+
+The explainability in the work of Miller is equated with interpretability. Explanation is also regarded as an answer to a "why-question". A why question is defined as a complex entity which is composed of presupposition, whether-question and obviously a word "why". For example the question "why the model gave this answer" is composed of the word "why", question "did the model gave this answer?" and presupposition being "the model gave this answer". Miller also argues that the structure is not always that simple because explanations are also contrastive and the opposition of some decision that was made to the other that wasn't is very important.
+
+The work of [19] takes the perspective of predictability or simulatability [4] - the ability of a human to predict model's behavior. They state:
+
+> Interpretability refers to the intrinsic properties of a deep model measuring in which degree the inference result of the deep model is predictable or understandable to human beings [19].
+
+The interpretability is by their definition an intrinsic property of a model which corresponds to the predictability of its behavior by a human. This goes in contrast to some other works because here interpretability becomes measure of what is called simulatability and considering this loses its own distinctive meaning.
 
 Similar situation is in the work of Gilpin et al. [11]. Despite them distinguishing between interpretability and explainability, they argue that interpretability goes in contrast with another property being completeness. Completeness in their terms measures how accurate the explanation describes the functioning of the system. However, this definition of completeness is contrasted with a common one, used by authors of some other works [3, 10]. 
 Common definition of completeness revolves around showing the user as much relevant information as possible, trying not to omit details of little influence in pursuit for a pleasant explanation. "Completeness" Gilpin et al. describe is best suited for another property called correctness or soundness in some works [3]. This property states for "nothing but the truth" and measures exactly what is described in their work. Here interpretability once again loses its own meaning and the position of the ground-term, becoming something else. Considering contrast authors make between interpretability and completeness one can suppose that under interpretability here they mean such property as completeness and by contrasting completeness they mean correctness. This tradeoff is common and well studied, however using other terms [2, 15]. Considering this, one can see the reasons behind the critique of the field for a lack of proper definitions and rigor.
@@ -33,7 +56,11 @@ Some more definitions include one made by Doran et al. [18]. They argue that sys
 
 Some authors in their work separate terms "interpretability" and "explainability" giving them different meanings. In previous section points of authors that do not distinct between the two were overviewed. In this section the definitions of their counterparts will be reviewed. This section will also include definitions of explainability itself.
 
-Rudin et al. in their work on customized rules for example state that explainability can be applied only to the black-box models and interpretability can be applied only to transparent or white-box models [5]. Burkart and Huber in their survey go along the same line contrasting two terms in the following way: interpretability is about understanding the work of model as a whole and explainability is used when the model cannot be fully understandable and explanations are used to understand it [14]. Gaur et al. gives different definitions contrasting the terms by the type of question that is answered. Explainability answers the question of why the decision was made and interpretability answers the question of how the model made certain decision [6].
+Rudin et al. in their work on customized rules for example state that explainability can be applied only to the black-box models and interpretability can be applied only to transparent or white-box models [5]. Burkart and Huber in their survey go along the same line contrasting two terms in the following way:
+
+> interpretability is about understanding the work of model as a whole and explainability is used when the model cannot be fully understandable and explanations are used to understand it [14].
+
+Gaur et al. gives different definitions contrasting the terms by the type of question that is answered. Explainability answers the question of why the decision was made and interpretability answers the question of how the model made certain decision [6].
 
 ## Other related terms
 
@@ -49,7 +76,11 @@ The work of Doran et al. focuses on definitions and meanings and proposes anothe
 ## Conclusion
 
 Making a summary of interpretability definitions some general picture of this research field forms. There are two main and considerable lines of thought: interpretability defined through causation and without it. The most common way to put interpretability exists with some deviations, but it was not to this moment formed into general consensus. Aside of that main lines a number of other, more exotic frameworks exist, which usually give interpretability very different meanings.
-It seems necessary to state what definition will be used in my thesis. To not further increase the amount of different interpretations of interpretability definitions is would be reasonable to stick with some already existing definition that is also supported by a number of notable researchers in the field. In my work the following variant will be used: "interpretability is the ability to explain or to present in understandable terms to a human". It is general so it is able to cover more approaches and it does not conflict with any of the properties of interpretability that are used to evaluate XAI methods. The distinction between terms "interpretability" and "explainability" will not be made in the work also.
+It seems necessary to state what definition will be used in my thesis. To not further increase the amount of different interpretations of interpretability definitions is would be reasonable to stick with some already existing definition that is also supported by a number of notable researchers in the field. In my work the following variant will be used:
+
+> "interpretability is the ability to explain or to present in understandable terms to a human".
+
+It is general so it is able to cover more approaches and it does not conflict with any of the properties of interpretability that are used to evaluate XAI methods. The distinction between terms "interpretability" and "explainability" will not be made in the work also.
 
 ## References
 
