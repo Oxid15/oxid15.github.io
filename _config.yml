@@ -20,15 +20,27 @@
 
 title: Ilia Moiseev
 email: ilia.moiseev.5@yandex.ru
+tagline: Personal website and blog
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal website and blog
+  Personal website and blog of Ilia Moiseev - Machine Learning Engineer about 
+  Machine Learning, MLOps, Cascade and other things
+url: oxid15.github.io
+author: Ilia Moiseev
+
 github_username:  oxid15
 linkedin_username:  ilia-moiseev
+
+social:
+  name: Ilia Moiseev
+  links:
+    - https://www.linkedin.com/in/ilia-moiseev
+    - https://github.com/oxid15
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
