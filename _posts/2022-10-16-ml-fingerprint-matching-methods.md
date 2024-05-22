@@ -10,7 +10,7 @@ Brief overview
 
 ## Foreword
 
-During first year of my master's program I was assigned the task to make a literature review on the topic of interest. Back then I haven't decided on my master thesis topic, so it wasn't the option. The topic I specialized on previously was not quiet a challenge for me, I was somewhat tired of image smoothing topic (for the interested paper, code) so I decided to choose another topic that I was working on previously.
+During first year of my master's program I was assigned the task to make a literature review on the topic of interest. Back then I haven't decided on my master thesis topic, so it wasn't the option. The topic I specialized on previously was not quiet a challenge for me, I was somewhat tired of image smoothing topic (for the interested [paper](https://ieeexplore.ieee.org/document/9117646), [code](https://github.com/Oxid15/Image-Smoothing-Algorithm-Based-on-Gradient-Analysis)) so I decided to choose another topic that I was working on previously.
 So this is pretty much how this text emerged. It is an overview of how ML-techniques are used in the field of fingerprint matching. For the moment of me writing that overview, I haven't found any similar works in the literature, which is in my opinion an overlook for the field. The work on this topic should be more broad than my toy-overview, but in my opinion the field of fingerprint-tasks lacks the works like that.
 
 ## Introduction
