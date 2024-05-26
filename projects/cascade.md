@@ -14,6 +14,8 @@ links:
   - title: Zenodo DOI record
     url: https://zenodo.org/doi/10.5281/zenodo.8006994
 references:
+  - title: "A blog post on Cascade: Streamlining MLOps for Small Teams and Individuals"
+    url: https://medium.com/@vishyanand10/a-blog-post-on-cascade-streamlining-mlops-for-small-teams-and-individuals-969eda83b40d
   - title: Awesome MLOps, Model Lifecycle section
     url: https://github.com/kelvins/awesome-mlops#model-lifecycle
   - title: How I (Re)implemented Metrics in Cascade
