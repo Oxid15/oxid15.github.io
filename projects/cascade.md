@@ -24,4 +24,10 @@ references:
     url: /posts/en/2022/07/22/cascade-announce.html
 ---
 
-ML Engineering library with the aim to standardize the work with data and models, make experiments more reproducible, ML development faster.
+Cascade is an MLOps library with the aim to help individual ML engineers or researchers implement some standards of MLOps while still maintaining the small scale of operations.
+
+Cascade features:
+- Pipeline building
+- Experiment management
+- Data validation
+- Popular ML library integrations

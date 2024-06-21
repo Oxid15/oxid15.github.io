@@ -11,4 +11,4 @@ links:
 
 ---
 
-The program allows to create and train neural networks with arbitrary number of layers and neurons. Python scripts allow to convert neural nets from Tensorflow .pb format to the custom format of this repository with the extension .nn. The inference results should remain the same.
+The program allows to create and train neural networks with arbitrary number of layers and neurons. Python scripts allow to convert fully-connected neural networks from Tensorflow `.pb` format to the custom format of this project with the extension `.nn`. The inference results should remain the same.

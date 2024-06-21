@@ -20,3 +20,5 @@ references:
 ---
 
 This is image smoothing algorithm that uses information about boundaries that are contained in image's gradient. In particular it discriminates between two kinds of boundaries - regular and irregular ones. It is trying to preserve the first kind of boundaries, assuming that the second one represents a texture or a noise.
+
+![results-example](../../../../../images/ara.bmp53.png)
