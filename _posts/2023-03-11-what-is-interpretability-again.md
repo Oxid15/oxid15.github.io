@@ -2,11 +2,10 @@
 layout: post
 title:  "What is Interpretability Again?"
 date:   2023-03-11 00:00:00 +0000
+description: "Brief overview of definitions"
 categories: posts en
 tags: xai
 ---
-
-Brief overview of definitions
 
 ## Foreword
 

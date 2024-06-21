@@ -1,12 +1,11 @@
 ---
 layout: post
 title:  "Cascade Project"
+description: "Lightweight ML Engineering Library"
 date:   2022-07-22 00:00:00 +0000
 categories: posts en
 tags: cascade mlops
 ---
-
-Lightweight ML Engineering Library
 
 ## Foreword
 This post is on the project that I was developing for 6 months now. It is named Cascade. ML engineering library for fast-paced ML development, management of metadata and artifacts.
