@@ -1,67 +1,54 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+---
+layout: default
+---
 
 {% include project_head.html %}
+<article class="project">
 
-<body>
+    <header class="project-header">
+        <h1 class="project-title">{{ page.project-name | escape }}</h1>
+        <p class="project-subtitle">{{ page.subtitle | escape }}</h1>
+        <p class="project-start-date">Started: {{page.start-date}}</p>
+        {%- if page.end-date -%}
+        <p class="project-end-date">Finished: {{page.end-date}}</p>
+        {%- endif -%}
+    </header>
 
-    {%- include header.html -%}
+    <div class="project-content">
+        {{ content }}
+    </div>
 
-    <main class="page-content" aria-label="Content">
-        <div class="wrapper">
+    <div class="project-links">
+        <h2>Links</h2>
+        <ul class="ref-list">
+            {%- for link in page.links -%}
+            <li>
+                <h3>
+                    <a class="post-ref" href="{{ link.url }}">
+                        {{ link.title | escape }}
+                    </a>
+                </h3>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </div>
 
-            <article class="project">
-                <header class="project-header">
-                    <h1 class="project-title">{{ page.project-name | escape }}</h1>
-                    <p class="project-subtitle">{{ page.subtitle | escape }}</h1>
-                    <p class="project-start-date">Started: {{page.start-date}}</p>
-                    {%- if page.end-date -%}
-                    <p class="project-end-date">Finished: {{page.end-date}}</p>
-                    {%- endif -%}
-                </header>
-            
-                <div class="project-content">
-                    {{ content }}
-                </div>
-            
-                <div class="project-links">
-                    <h2>Links</h2>
-                    <ul class="ref-list">
-                        {%- for link in page.links -%}
-                        <li>
-                            <h3>
-                                <a class="post-ref" href="{{ link.url }}">
-                                    {{ link.title | escape }}
-                                </a>
-                            </h3>
-                        </li>
-                        {%- endfor -%}
-                    </ul>
-                </div>
-            
-                {%- if page.references -%}
-                <div class="project-posts">
-                    <h2>Materials referencing {{page.project-name}}</h2>
-                    <ul class="ref-list">
-                        {%- for ref in page.references -%}
-                        <li>
-                            <h3>
-                                <a class="post-ref" href="{{ ref.url }}">
-                                    {{ ref.title | escape }}
-                                </a>
-                            </h3>
-                        </li>
-                        {%- endfor -%}
-                    </ul>
-                </div>
-                {%- endif -%}
-            
-                <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-            </article>
-        </div>
-    </main>
+    {%- if page.references -%}
+    <div class="project-posts">
+        <h2>Materials referencing {{page.project-name}}</h2>
+        <ul class="ref-list">
+            {%- for ref in page.references -%}
+            <li>
+                <h3>
+                    <a class="post-ref" href="{{ ref.url }}">
+                        {{ ref.title | escape }}
+                    </a>
+                </h3>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </div>
+    {%- endif -%}
 
-    {%- include footer.html -%}
-
-</body>
-</html>
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
