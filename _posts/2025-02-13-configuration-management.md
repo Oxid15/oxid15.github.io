@@ -23,7 +23,7 @@ This post is about why and how configuration management became a part of Cascade
 After deciding that Cascade needs something to work with configs I did small overview to see what others already have. Luckily I stumbled upon some great features in projects either dedicated to configs or to experiment management. My overview does not try to be comprehensive or scientific - its purpose was to inspire me and see what already works for the users of other projects.
 
 [Sacred](https://github.com/IDSIA/sacred) is an experiment management tool. Although without specific focus on ML, its decorators allow tracking every parameter that was passed to a function.
-Although decorators are powerful, they inflict additional dependencies on experiment code, potentially making it less transfetable as [pointed out](https://www-guildai.netlify.app/faq/) by the creator of guildai.
+Although decorators are powerful, they inflict additional dependencies on experiment code, potentially making it less transferable as [pointed out](https://www-guildai.netlify.app/faq/) by the creator of guildai.
 I really liked their environment tracking feature, that allows tracking all python packages versions in the current environment. This should greatly contribute to reproducibility.
 
 [GuildAI](https://github.com/guildai/guildai) is a tool with another paradigm. The problem with wrapping everything in trackers is not in possible speed overhead, but in dependency overhead.
@@ -143,9 +143,9 @@ In case that we start the script without `cascade run`, those methods will raise
 
 ## Failure handling
 
-What happens when the script finishes with an error? Logs and configs are saved by Lines when line.save is called. What if fail occures before this moment?
+What happens when the script finishes with an error? Logs and configs are saved by `Lines` when `line.save` is called. What if fail occures before this moment?
 After script finishes (with or without error) the context manager mentioned should remove temporary files - configs and logs by default. And this was the case for my first implementation.
-Cascade will keep configs and logs in the temporary directory .cascade/runs for the user to decide how to deal with them. Since each unique run has its own name for temporary folder, the path is printed as the part of the error message when script finished. This enables such important features as postmortem analysis of logs and configs that were used when the error occured.
+Cascade will keep configs and logs in the temporary directory `.cascade/runs` for the user to decide how to deal with them. Since each unique run has its own name for temporary folder, the path is printed as the part of the error message when script finished. This enables such important features as postmortem analysis of logs and configs that were used when the error occured.
 
 ## Summary
 
