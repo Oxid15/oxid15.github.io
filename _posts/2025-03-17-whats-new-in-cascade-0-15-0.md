@@ -122,7 +122,7 @@ After running this you have:
 3. Logs tracking that you get for free by adding `--log` to the command, log will be added to the same `files` folder
 4. Exception handling is also included, logs and configs will be saved in a temporary directory
 
-See [this tutorial](https://oxid15.github.io/cascade/en/v0.15.0/tutorials/advanced_experiment_management.html) for more formal explanation and this post for how this works under the hood.
+See [this tutorial](https://oxid15.github.io/cascade/en/v0.15.0/tutorials/configuration.html) for more formal explanation and this post for how this works under the hood.
 
 ## Results querying
 
