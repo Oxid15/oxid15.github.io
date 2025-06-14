@@ -2,11 +2,10 @@
 layout: post
 title:  "ML Fingerprint Matching Methods"
 date:   2022-10-16 00:00:00 +0000
+description: "Brief overview"
 categories: posts en
 tags: fingerprints
 ---
-
-Brief overview
 
 ## Foreword
 

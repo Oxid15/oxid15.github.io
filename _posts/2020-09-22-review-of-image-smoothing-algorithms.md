@@ -2,11 +2,10 @@
 layout: post
 title:  "Review of Image Smoothing Algorithms"
 date:   2020-09-22 00:00:00 +0000
+description: "What is the task of image smoothing, when is it used and what approaches to it exist in image processing practice"
 categories: posts en
 tags: image_smoothing
 ---
-
-What is the task of image smoothing, when is it used and what approaches to it exist in image processing practice.
 
 Image smoothing task is considered to be fundamental image processing task, but it's not exclusively "image" task. There exists for example dataset smoothing in statistics, which generalizes the concept of smoothing images to smoothing datasets. However, the task is similar – to capture general pattern in data. If we would try to formulate the task of image smoothing more precisely, we would say that we are trying to construct the new image in such way that we preserve general pattern and leave the noise and small perturbations out. How do we approach this task if we talk about digital image smoothing?
 

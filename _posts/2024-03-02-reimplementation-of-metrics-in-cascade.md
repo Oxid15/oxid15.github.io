@@ -3,6 +3,7 @@ layout: post
 title: How I (Re)implemented Metrics in Cascade
 date: 2024-03-02
 categories: posts en
+description: "Highlights of the v0.13 update"
 tags:
   - cascade
   - mlops
@@ -102,7 +103,7 @@ class AccMetric(Metric):
     """
     name = "acc_but_class"
 
-    def compute(target, pred):
+    def compute(self, target, pred):
         self.value = sum(target == pred) / len(target)
 
 model.evaluate(x, y, metrics=[AccMetric(), accuracy_but_fn])
