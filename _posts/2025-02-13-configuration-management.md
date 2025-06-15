@@ -8,6 +8,7 @@ tags:
   - cascade
   - mlops
   - configuration_management
+redirect_to: https://ilia-moiseev.com/posts/en/2025/02/13/configuration-management.html
 ---
 
 ## Motivation

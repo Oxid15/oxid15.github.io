@@ -5,6 +5,7 @@ date:   2020-11-08 00:00:00 +0000
 description: "Are any of these faces real?"
 categories: posts en
 tags: liveness_detection
+redirect_to: https://ilia-moiseev.com/posts/en/2020/11/08/the-task-of-face-liveness-detection.html
 ---
 
 Biometric systems become more and more widespread in recent years. 2D face recognition is not an exception, being one of the most fast growing biometric technologies for different applications from surveillance to smartphone unlocking. It is not surprising due to minimum effort that needed from user to use those systems along with the minimum amount of special devices needed.

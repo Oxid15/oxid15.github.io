@@ -5,6 +5,7 @@ date:   2022-10-16 00:00:00 +0000
 description: "Brief overview"
 categories: posts en
 tags: fingerprints
+redirect_to: https://ilia-moiseev.com/posts/en/2022/10/16/ml-fingerprint-matching-methods.html
 ---
 
 ## Foreword

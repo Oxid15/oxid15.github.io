@@ -5,6 +5,7 @@ description: "Lightweight ML Engineering Library"
 date:   2022-07-22 00:00:00 +0000
 categories: posts en
 tags: cascade mlops
+redirect_to: https://ilia-moiseev.com/posts/en/2022/07/22/cascade-announce.html
 ---
 
 ## Foreword

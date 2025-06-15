@@ -8,6 +8,7 @@ tags:
   - cascade
   - mlops
   - release_notes
+redirect_to: https://ilia-moiseev.com/posts/en/2025/03/17/whats-new-in-cascade-0-15-0.html
 ---
 
 ## What's new in Cascade 0.15.0

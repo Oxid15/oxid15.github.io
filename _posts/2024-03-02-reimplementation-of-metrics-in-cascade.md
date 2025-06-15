@@ -7,6 +7,7 @@ description: "Highlights of the v0.13 update"
 tags:
   - cascade
   - mlops
+redirect_to: https://ilia-moiseev.com/posts/en/2024/03/02/reimplementation-of-metrics-in-cascade.html
 ---
 
 ## Foreword

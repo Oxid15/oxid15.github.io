@@ -5,6 +5,7 @@ date:   2023-03-11 00:00:00 +0000
 description: "Brief overview of definitions"
 categories: posts en
 tags: xai
+redirect_to: https://ilia-moiseev.com/posts/en/2023/03/11/what-is-interpretability-again.html
 ---
 
 ## Foreword
