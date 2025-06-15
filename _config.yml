@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Ilia Moiseev
-email: ilia.moiseev.5@yandex.ru
+email: hello@ilia-moiseev.com
 tagline: Personal website and blog
 description: >- # this means to ignore newlines until "baseurl:"
   Personal website and blog of Ilia Moiseev - Machine Learning Engineer about 
@@ -48,6 +48,9 @@ plugins:
 
 whitelist:
   - jekyll-redirect-from
+
+url: https://ilia-moiseev.com
+baseurl: ""
 
 # Exclude from processing.
 # The following items will not be processed, by default.
