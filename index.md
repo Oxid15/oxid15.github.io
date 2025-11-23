@@ -1,5 +1,6 @@
 ---
 layout: home
+lang: en
 ---
 
 # Hi, I'm Ilia - Machine Learning Engineer with Specialty in Computer Vision
@@ -12,31 +13,34 @@ I'm passioned about computer vision either classical or ML and love to tackle ch
 
 Saint-Petersburg, July 2024 - now, more than 1 year
 
-This is my current role. I enjoy working as a part of a very professional team on image processing and computer vision projects.
+This is my current role. I am mostly working on making very efficient ML models for image signal processing (ISP) used in mobile devices.
 
 ### **Machine Learning Engineer - [Sarafan Tech](https://sarafan.tech/)**
 
 Saint-Petersburg, October 2021 - July 2024, 3 years
 
-This position offered a certain challenge, demanding to generalize from only-computer-vision tasks to general ML, speech processing and more. Working in a small team I learned to be independent and build ML-driven systems from scratch starting from data gathering and ending with feedback collection and gradual improvement.
+I was responsible for the whole lifecycle of ML project from data gathering and model training to deployment and monitoring.
+The communication with customers was an integral part of my work too. The projects were diverse, ranging from classical ML to NLP and computer vision.
+The most notable one was visual search system with the database with millions of entities.
 
 ### **Computer Vision Developer - [3DiVi Inc](https://3divi.com/)**
 
 Chelyabinsk, January 2021 - August 2021, 8 months
 
-Developed several projects using C++ and Python with a team. Independently developed and implemented a solution for head-pose calibration problem. Implemented and maintained internal product usage cycle, for customer-side issues identification.
+Mostly worked on driver monitoring systems (DMS) using C++ and Python. Independently developed and implemented a solution for head-pose calibration problem.
+Implemented and maintained internal product usage cycle, for customer-side issues identification.
 
 ### **Intern  - [3DiVi Inc](https://3divi.com/)**
 
 Chelyabinsk, October 2020 - December 2020, 3 months
 
-While being at this role, I developed an isolated project in Python, did scientific research to identify most suitable solution and then use available implementation of it to produce deployable module.
+While being at this role, I developed a synthetic data generator using a neural network for depth estimation and Blender for image rendering.
 
 ### **C++ Programmer - [Sonda Technologies](https://sonda-tech.com/)**
 
 Chelyabinsk, August 2020 - August 2021, 1 year
 
-Integrated own implementation of neural network into existing C++ fingerprint verification system. Implementation was used only for inference: learning was performed in TF and then model was converted to custom format
+Integrated a neural network into existing C++ fingerprint verification system.
 
 ## **Education**
 
@@ -44,7 +48,7 @@ Integrated own implementation of neural network into existing C++ fingerprint ve
 
 Saint-Petersburg, 2021 - 2023
 
-This program is devoted to applicable Machine Learning and Data Analysis. After taking healthcare related specialty I learned a lot about what role data plays in the medical domain. Taking into account the importance of interpretability when using complex algorithms in healthcare, I devoted my master thesis to the comparison of different XAI techniques under the hood of one benchmark.
+This program is devoted to applicable Machine Learning and Data Analysis. After taking healthcare related specialty I learned a lot about what role data plays in the medical domain. Taking into account the importance of interpretability when using complex algorithms in healthcare, I devoted my master thesis to the comparison of different XAI techniques under the hood of a single [benchmark](https://oxid15.github.io/xai-benchmark/index.html).
 
 ### **Bachelor's degree at Computer Engineering - [South Ural State University](https://www.susu.ru/en)**
 
@@ -78,6 +82,8 @@ Here is the list of additional courses I took
 - Deploying ML to production
 - Building data pipelines
 - Organizing data labeling
+- Customer communication
+- Mentorship
 
 ### Domain Skills
 
@@ -91,19 +97,47 @@ Here is the list of additional courses I took
 
 ### Tools
 
-- git
-- CI
-- MLOps tools
+- General
+  - git
+  - bash
+  - CI/CD
+  - Docker
+  - k8s
+  - cmake
+  - pytest
+  - blender
+- ML/MLOps
+  - pytorch
+  - DDP
+  - opencv
+  - huggingface
+  - scikit-learn
+  - optuna
+  - shap
+- Data
+  - numpy
+  - pandas
+  - airflow
+  - matplotlib
+  - plotly
+- DBs
+  - psycopg2
+  - sqlite
 - Vector DBs
-- Airflow
-- pytorch
-- Flask
-- opencv
-- cmake
+  - milvus
+  - qdrant
+  - marqo
+  - vespa
+- Web
+  - flask
+  - dash
+  - fastapi
+  - pydantic
+  - starlette
 
 ## **Languages**
 
-- Russian - Native
 - English - Fluent
-- German - Pre-Intermediate, B1
-- Japanese - Elementary, N5
+- Japanese - Pre-Intermediate
+- German - Pre-Intermediate
+- Russian - Native

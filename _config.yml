@@ -26,6 +26,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Machine Learning, MLOps, Cascade and other things
 url: oxid15.github.io
 author: Ilia Moiseev
+languages: ["en", "jp"]
+default_lang: "en"
 
 github_username:  oxid15
 linkedin_username:  ilia-moiseev
